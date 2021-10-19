@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { version } from "antd";
+import styled from "styled-components";
 
 function App() {
+  const Button = styled.button`
+    color: palevioletred;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border: 2px solid palevioletred;
+    border-radius: 3px;
+  `;
+
+  const TomatoButton = styled(Button)`
+    color: tomato;
+    border-color: tomato;
+  `;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{version}</h1>
+      <Button>Normal Button</Button>
+      <TomatoButton>Tomato Button</TomatoButton>
     </div>
   );
 }
