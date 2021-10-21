@@ -25,8 +25,13 @@ const TopHeader = () => {
 
       <Menu isOpen={isOpen}>
         <MenuItems>
-          <Button className="MenuItems__Search">
-            Search <span style={{ width: "150px" }}> </span> <SearchOutlined />
+          <Button
+            style={{ background: "#37487E", color: "white", border: "none" }}
+            className="MenuItems__Search"
+          >
+            Search
+            <span style={{ width: "140px" }}> </span>
+            <SearchOutlined />
           </Button>
         </MenuItems>
 
@@ -103,7 +108,7 @@ const Menu = styled.div`
 `;
 
 const MenuItems = styled.div`
-  padding: 0rem 0.525rem;
+  padding: 0rem 0.6rem;
   text-align: start;
   cursor: pointer;
 `;
