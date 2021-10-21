@@ -11,12 +11,40 @@ const TopHeader = () => {
 
   const Logo = styled.a``;
 
-  const Humburger = styled.div``;
+  const Humburger = styled.div`
+    display: none;
+    justify-content: center;
+    flex-direction: column;
 
-  const Menu = styled.div``;
+    span {
+      height: 2px;
+      width: 22px;
+      background: white;
+      margin-bottom: 4px;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  `;
+
+  const Menu = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+
+    @media (max-width: 768px) {
+      overflow: hidden;
+      flex-direction: column;
+      width: 100%;
+    }
+  `;
 
   const MenuItems = styled.div`
-    display: inline-flex;
+    padding: 0rem 0.225rem;
+    text-align: start;
   `;
 
   return (
