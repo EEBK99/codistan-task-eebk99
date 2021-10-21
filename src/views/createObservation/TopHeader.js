@@ -101,9 +101,9 @@ const Menu = styled.div`
     flex-direction: row;
     width: 100%;
     background-color: #112565;
-    /* here it is checking eitheir it has to open or not using isOpen props  */
     max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
     transition: max-height 0.6s ease-in;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   }
 `;
 
