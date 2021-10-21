@@ -1,5 +1,6 @@
 import "./App.css";
 import { version, Layout } from "antd";
+import TopHeader from "./views/createObservation/TopHeader";
 import styled from "styled-components";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   // `;
 
   Header = styled(Header)`
-    background-color: white;
+    background-color: #112565;
   `;
 
   return (
@@ -30,7 +31,9 @@ function App() {
       <TomatoButton>Tomato Button</TomatoButton> */}
 
       <Layout>
-        <Header>Header</Header>
+        <Header>
+          <TopHeader />
+        </Header>
         <Layout>
           <Sider>Sider</Sider>
           <Content>Content</Content>
