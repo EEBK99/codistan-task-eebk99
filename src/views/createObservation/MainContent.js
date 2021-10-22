@@ -1,15 +1,14 @@
 import React from "react";
-import { Row, Col, Divider, Typography, Form, Select } from "antd";
+import { Row, Col, Divider, Typography } from "antd";
+import CreateObsForm from "./CreateObsForm";
 
 const MainContent = () => {
   const { Title } = Typography;
-  const { Option } = Select;
 
   return (
     <>
       <Row
-        justify="center"
-        align="middle"
+        justify="start"
         style={{
           background: "white",
           borderRadius: "6px",
@@ -21,7 +20,9 @@ const MainContent = () => {
             Create Observation
           </Title>
         </Col>
-        <Col span={24}></Col>
+        <Col span={24}>
+          <CreateObsForm />
+        </Col>
       </Row>
     </>
   );
