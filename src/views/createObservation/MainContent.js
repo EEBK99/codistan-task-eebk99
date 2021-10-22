@@ -8,6 +8,7 @@ const MainContent = () => {
 
   return (
     <>
+      {/* Create Observation */}
       <Row
         justify="start"
         style={{
@@ -26,6 +27,7 @@ const MainContent = () => {
         </Col>
       </Row>
 
+      {/* Classify SOR */}
       <Row
         justify="start"
         style={{
@@ -41,6 +43,16 @@ const MainContent = () => {
         <Col span={24}>
           <ClassifySorForm />
         </Col>
+
+        {/* add space */}
+
+        {/* Observation Detail  */}
+        {/* Suggestions  */}
+
+        <Col span={24}>
+          <Title level={5}>Observation Detail</Title>
+        </Col>
+        <Col span={24}>sadsakd</Col>
       </Row>
     </>
   );

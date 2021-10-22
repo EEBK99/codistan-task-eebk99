@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="concern-large-icon" transform="translate(-841 -548)">
+    <rect id="Rectangle_17177" data-name="Rectangle 17177" width="32" height="32" transform="translate(841 548)" fill="none"/>
+    <g id="exclamation" transform="translate(843.667 550.667)">
+      <g id="Group_6353" data-name="Group 6353">
+        <g id="Group_6352" data-name="Group 6352">
+          <path id="Path_6705" data-name="Path 6705" d="M13.333,0A13.333,13.333,0,1,0,26.667,13.333,13.326,13.326,0,0,0,13.333,0Zm0,24.583a11.25,11.25,0,1,1,11.25-11.25A11.244,11.244,0,0,1,13.333,24.583Z" fill="#3498db"/>
+        </g>
+      </g>
+      <g id="Group_6355" data-name="Group 6355" transform="translate(12.419 7.116)">
+        <g id="Group_6354" data-name="Group 6354">
+          <path id="Path_6706" data-name="Path 6706" d="M236.914,128.877a.914.914,0,0,0-.914.914v5.887a.914.914,0,0,0,1.828,0v-5.887A.914.914,0,0,0,236.914,128.877Z" transform="translate(-236 -128.877)" fill="#3498db"/>
+        </g>
+      </g>
+      <g id="Group_6357" data-name="Group 6357" transform="translate(12.099 17.021)">
+        <g id="Group_6356" data-name="Group 6356">
+          <circle id="Ellipse_1046" data-name="Ellipse 1046" cx="1.234" cy="1.234" r="1.234" fill="#3498db"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

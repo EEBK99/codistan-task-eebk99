@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="positive-large-icon" transform="translate(-866 -836)">
+    <rect id="Rectangle_17181" data-name="Rectangle 17181" width="32" height="32" transform="translate(866 836)" fill="none"/>
+    <g id="check_1_" data-name="check (1)" transform="translate(868 838)">
+      <g id="Group_5547" data-name="Group 5547" transform="translate(0)">
+        <g id="Group_5546" data-name="Group 5546">
+          <path id="Path_4713" data-name="Path 4713" d="M14,0A14,14,0,1,0,28,14,14,14,0,0,0,14,0Zm0,26A12,12,0,1,1,26,14,12,12,0,0,1,14,26Z" transform="translate(0)" fill="#4ba735"/>
+        </g>
+      </g>
+      <g id="Group_5549" data-name="Group 5549" transform="translate(8.96 10.246)">
+        <g id="Group_5548" data-name="Group 5548">
+          <path id="Path_4714" data-name="Path 4714" d="M113.477,136.945a.719.719,0,0,0-1,0h0l-6.683,6.683-2.368-2.368a.719.719,0,0,0-1.035,1l.018.018,2.877,2.877a.719.719,0,0,0,1.017,0l7.192-7.192A.719.719,0,0,0,113.477,136.945Z" transform="translate(-102.922 -137.291)" fill="#4ba735"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
