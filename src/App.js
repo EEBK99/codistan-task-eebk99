@@ -1,7 +1,7 @@
 import "./App.css";
 import { Layout } from "antd";
 import styled from "styled-components";
-import TopHeader from "./views/createObservation/TopHeader";
+import TopHeader from "./views/container/TopHeader";
 import MainContent from "./views/createObservation/MainContent";
 
 function App() {
