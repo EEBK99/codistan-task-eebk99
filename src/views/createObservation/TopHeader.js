@@ -42,7 +42,12 @@ const TopHeader = () => {
         </MenuItems>
 
         <MenuItems>
-          <Badge style={{ background: "red" }} size="small" count={2}>
+          <Badge
+            style={{ background: "red" }}
+            size="small"
+            count={2}
+            overflowCount={99}
+          >
             <Tooltip title="Notifications">
               <img src={TopHeaderNotificationIcon} alt="Notification Icon" />
             </Tooltip>
@@ -50,7 +55,12 @@ const TopHeader = () => {
         </MenuItems>
 
         <MenuItems>
-          <Badge style={{ background: "red" }} size="small" count={1}>
+          <Badge
+            style={{ background: "red" }}
+            size="small"
+            count={1}
+            overflowCount={99}
+          >
             <Tooltip title="Profile">
               <Avatar icon={<UserOutlined />} />
             </Tooltip>
@@ -97,12 +107,14 @@ const Menu = styled.div`
   border-bottom-right-radius: 10px;
 
   @media (max-width: 768px) {
+    z-index: 1;
     overflow: hidden;
     flex-direction: row;
     width: 100%;
     background-color: #112565;
     max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
-    transition: max-height 0.6s ease-in;
+    transition: max-height 0.6s ease-in-out;
+
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   }
 `;
