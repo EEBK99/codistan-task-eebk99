@@ -45,10 +45,12 @@ const MainContent = () => {
         </Col>
 
         {/* add space */}
+        <br />
+        <br />
+        <br />
 
         {/* Observation Detail  */}
         {/* Suggestions  */}
-
         <Col span={24}>
           <Title level={5}>Observation Detail</Title>
         </Col>
