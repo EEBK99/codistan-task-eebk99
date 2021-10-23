@@ -5,6 +5,7 @@ import ClassifySorForm from "./ClassifySorForm";
 import ClassifyObsDetForm from "./ClassifyObsDetForm";
 import InvovledPerForm from "./InvolvedPerForm";
 import AttachementsForm from "./AttachementsForm";
+import EndContainerForm from "./EndContainerForm";
 
 const MainContent = () => {
   const { Title } = Typography;
@@ -93,6 +94,18 @@ const MainContent = () => {
         </Col>
 
         <Divider />
+
+        {/* Google Map */}
+
+        <Col span={24}>Map</Col>
+
+        <Divider />
+
+        {/* Submit to , Notify only and Buttons */}
+
+        <Col span={24}>
+          <EndContainerForm />
+        </Col>
       </Row>
     </>
   );
