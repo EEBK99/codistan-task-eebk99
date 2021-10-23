@@ -8,6 +8,7 @@ import AttachementsForm from "./AttachementsForm";
 import EndContainerForm from "./EndContainerForm";
 import Mapform from "./MapForm";
 import ActionsRecomForm from "./ActionsRecomForm";
+import PotentialRiskForm from "./PotentialRiskForm";
 
 const MainContent = () => {
   const { Title } = Typography;
@@ -67,6 +68,26 @@ const MainContent = () => {
         </Col>
         <Col span={24}>
           <ClassifyObsDetForm />
+        </Col>
+
+        <Divider />
+
+        {/* Potential Risk */}
+        <Col span={24}>
+          <span
+            style={{ fontWeight: "bold", fontSize: "20px", color: "#8892B2" }}
+          >
+            Potential Risk
+          </span>
+          <br />
+          <span style={{ fontSize: "13px", color: "#969696" }}>
+            System Defined
+          </span>
+        </Col>
+
+        <Col span={24}>
+          <br />
+          <PotentialRiskForm />
         </Col>
 
         <Divider />
