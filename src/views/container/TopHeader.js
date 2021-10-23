@@ -30,7 +30,7 @@ const TopHeader = () => {
             className="MenuItems__Search"
           >
             Search
-            <span style={{ width: "140px" }}> </span>
+            <span style={{ width: "135px" }}> </span>
             <SearchOutlined />
           </Button>
         </MenuItems>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button } from "antd";
+import { Form, Button, Radio } from "antd";
 import ClassifySorConcernSvg from "../../assets/svg/ClassifySorConcern.svg";
 import ClassifySorPositiveSvg from "../../assets/svg/ClassifySorPositive.svg";
 import ClassifySorLSRSvg from "../../assets/svg/ClassifySorLSR.svg";
@@ -97,6 +97,91 @@ const ClassifySorForm = () => {
           </Button>
         </Form.Item>
       </Form>
+
+      {/* Using Radio Button */}
+      {/* <Radio.Group defaultValue="a" buttonStyle="solid">
+        <Radio.Button
+          value="a"
+          style={{
+            color: "#3498DB",
+            borderColor: "#3498DB",
+            width: "8rem",
+            marginBottom: "0.5rem",
+            marginRight: "0.5rem",
+          }}
+        >
+          <img
+            src={ClassifySorConcernSvg}
+            alt=""
+            style={{
+              width: "1.5rem",
+              height: "1.5rem",
+              marginRight: "0.5rem",
+            }}
+          />
+          Concern
+        </Radio.Button>
+        <Radio.Button
+          value="b"
+          style={{
+            color: "#4BA735",
+            borderColor: "#4BA735",
+            width: "8rem",
+            marginBottom: "0.5rem",
+          }}
+        >
+          <img
+            src={ClassifySorPositiveSvg}
+            alt=""
+            style={{
+              width: "1.5rem",
+              height: "1.5rem",
+              marginRight: "0.5rem",
+            }}
+          />
+          Positive
+        </Radio.Button>
+        <Radio.Button
+          value="c"
+          style={{
+            color: "#FC9121",
+            borderColor: "#FC9121",
+            width: "8rem",
+            marginBottom: "0.5rem",
+          }}
+        >
+          <img
+            src={ClassifySorLSRSvg}
+            alt=""
+            style={{
+              width: "1.5rem",
+              height: "1.5rem",
+              marginRight: "0.5rem",
+            }}
+          />
+          LSR
+        </Radio.Button>
+        <Radio.Button
+          value="d"
+          style={{
+            color: "#E74C3C",
+            borderColor: "#E74C3C",
+            width: "8rem",
+            marginBottom: "0.5rem",
+          }}
+        >
+          <img
+            src={ClassifySorNearMissSvg}
+            alt=""
+            style={{
+              width: "1.5rem",
+              height: "1.5rem",
+              marginRight: "0.5rem",
+            }}
+          />
+          Near Miss
+        </Radio.Button>
+      </Radio.Group> */}
     </div>
   );
 };

@@ -2,13 +2,14 @@ import React from "react";
 import { Row, Col, Divider, Typography } from "antd";
 import CreateObsForm from "./CreateObsForm";
 import ClassifySorForm from "./ClassifySorForm";
+import ClassifyObsDetForm from "./ClassifyObsDetForm";
 
 const MainContent = () => {
   const { Title } = Typography;
 
   return (
     <>
-      {/* Create Observation */}
+      {/* First White Container */}
       <Row
         justify="start"
         style={{
@@ -18,7 +19,7 @@ const MainContent = () => {
         }}
       >
         <Col span={24}>
-          <Title level={4} style={{ color: "#112565" }}>
+          <Title level={3} style={{ color: "#112565" }}>
             Create Observation
           </Title>
         </Col>
@@ -27,7 +28,7 @@ const MainContent = () => {
         </Col>
       </Row>
 
-      {/* Classify SOR */}
+      {/* Second white Container */}
       <Row
         justify="start"
         style={{
@@ -38,7 +39,7 @@ const MainContent = () => {
         }}
       >
         <Col span={24}>
-          <Title level={5}>Classify SOR</Title>
+          <Title level={4}>Classify SOR</Title>
         </Col>
         <Col span={24}>
           <ClassifySorForm />
@@ -52,9 +53,30 @@ const MainContent = () => {
         {/* Observation Detail  */}
         {/* Suggestions  */}
         <Col span={24}>
-          <Title level={5}>Observation Detail</Title>
+          <Title level={4}>Observation Detail</Title>
         </Col>
-        <Col span={24}>sadsakd</Col>
+        <Col span={24}></Col>
+
+        <Col span={24}>
+          <Title level={5}>Suggestions</Title>
+        </Col>
+        <Col span={24}>
+          <ClassifyObsDetForm />
+        </Col>
+
+        <Divider />
+
+        <Col span={24}>
+          <Title level={4}>
+            Involved Person
+            <span style={{ fontWeight: "1" }}> (Optional)</span>
+          </Title>
+        </Col>
+        <Col span={24}>
+          <ClassifyObsDetForm />
+        </Col>
+
+        <Divider />
       </Row>
     </>
   );
