@@ -1,29 +1,37 @@
 import React from "react";
 import { Row, Col, Alert, Input, Typography } from "antd";
+import { CalendarOutlined } from "@ant-design/icons";
 
 const ClassifyObsDetForm = () => {
   const { TextArea } = Input;
   const { Text } = Typography;
 
+  const currentDateTime = Date();
+
   return (
     <div>
       <Row>
         <Col
-          span={11}
+          span={12}
           style={{
             borderColor: "#4BA735",
             borderStyle: "solid",
             borderWidth: "1px",
             borderRadius: "3px",
-            padding: "3px",
+            padding: "8px",
           }}
         >
           <Row align="middle">
-            <Col span={24}>on</Col>
+            <Col span={24}>
+              <span style={{ fontWeight: "1" }}>on</span> <CalendarOutlined />{" "}
+              {currentDateTime}
+            </Col>
+            <br />
+            <br />
             <Col span={24}>
               <TextArea
                 rows={4}
-                placeholder="It was observed that"
+                placeholder="Enter your observation here"
                 allowClear
                 showCount
                 style={{ border: "none" }}
@@ -31,11 +39,14 @@ const ClassifyObsDetForm = () => {
             </Col>
 
             <Col span={1}>at</Col>
-            <Col span={6}>
+            <Col span={7}>
               <Input placeholder="Add Area" style={{ border: "none" }} />
             </Col>
-            <Col span={5}></Col>
-            <Col span={12}>Reporting Time:</Col>
+            <Col span={4}></Col>
+            <Col span={12}>
+              <span style={{ fontWeight: "1" }}>Reporting Time:</span>{" "}
+              {currentDateTime}
+            </Col>
           </Row>
         </Col>
       </Row>
