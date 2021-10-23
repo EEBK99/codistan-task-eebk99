@@ -6,6 +6,7 @@ import ClassifyObsDetForm from "./ClassifyObsDetForm";
 import InvovledPerForm from "./InvolvedPerForm";
 import AttachementsForm from "./AttachementsForm";
 import EndContainerForm from "./EndContainerForm";
+import Mapform from "./MapForm";
 
 const MainContent = () => {
   const { Title } = Typography;
@@ -97,7 +98,9 @@ const MainContent = () => {
 
         {/* Google Map */}
 
-        <Col span={24}>Map</Col>
+        <Col span={24}>
+          <Mapform />
+        </Col>
 
         <Divider />
 
