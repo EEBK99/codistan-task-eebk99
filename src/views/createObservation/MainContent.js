@@ -4,6 +4,7 @@ import CreateObsForm from "./CreateObsForm";
 import ClassifySorForm from "./ClassifySorForm";
 import ClassifyObsDetForm from "./ClassifyObsDetForm";
 import InvovledPerForm from "./InvolvedPerForm";
+import AttachementsForm from "./AttachementsForm";
 
 const MainContent = () => {
   const { Title } = Typography;
@@ -67,6 +68,7 @@ const MainContent = () => {
 
         <Divider />
 
+        {/* Involved Person */}
         <Col span={24}>
           <Title level={4}>
             Involved Person
@@ -75,6 +77,19 @@ const MainContent = () => {
         </Col>
         <Col span={24}>
           <InvovledPerForm />
+        </Col>
+
+        <Divider />
+
+        {/* Attachments */}
+        <Col span={24}>
+          <Title level={4}>
+            Attachments
+            <span style={{ fontWeight: "1" }}> (Optional)</span>
+          </Title>
+        </Col>
+        <Col span={24}>
+          <AttachementsForm />
         </Col>
 
         <Divider />

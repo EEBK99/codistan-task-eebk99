@@ -12,7 +12,7 @@ function App() {
           <TopHeader />
         </Header>
         <Layout>
-          <Sider>Sider</Sider>
+          {/* <Sider>Sider</Sider> */}
           <Content>
             <MainContent />
           </Content>

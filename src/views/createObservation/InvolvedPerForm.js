@@ -7,7 +7,7 @@ const InvolvedPerForm = () => {
   return (
     <div>
       <Row justify="start">
-        <Col span={5}>
+        <Col xs={16} sm={7} md={9} lg={7} xl={5}>
           <Form>
             <Form.Item>
               <Select placeholder="Select or type name">
