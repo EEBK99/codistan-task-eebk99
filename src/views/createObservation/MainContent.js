@@ -3,6 +3,7 @@ import { Row, Col, Divider, Typography } from "antd";
 import CreateObsForm from "./CreateObsForm";
 import ClassifySorForm from "./ClassifySorForm";
 import ClassifyObsDetForm from "./ClassifyObsDetForm";
+import InvovledPerForm from "./InvolvedPerForm";
 
 const MainContent = () => {
   const { Title } = Typography;
@@ -73,7 +74,7 @@ const MainContent = () => {
           </Title>
         </Col>
         <Col span={24}>
-          <ClassifyObsDetForm />
+          <InvovledPerForm />
         </Col>
 
         <Divider />

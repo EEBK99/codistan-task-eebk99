@@ -7,22 +7,14 @@ const CreateObsForm = () => {
   return (
     <div>
       <Form layout="inline">
-        <Form.Item
-          name="selectProject"
-          label="Select Project"
-          // rules={[{ required: true }]}
-        >
+        <Form.Item name="selectProject" label="Select Project">
           <Select placeholder="Safety Connect">
             <Option value="Safety Connect">Safety Connect</Option>
             <Option value="Safety Connect2">Safety Connect 2</Option>
             <Option value="Safety Connect3">Safety Connect 3</Option>
           </Select>
         </Form.Item>
-        <Form.Item
-          name="location"
-          label="Location"
-          // rules={[{ required: true }]}
-        >
+        <Form.Item name="location" label="Location">
           <Select placeholder="Assembly Line">
             <Option value="Assembly Line">Assembly Line</Option>
             <Option value="Assembly Line2">Assembly Line 2</Option>
