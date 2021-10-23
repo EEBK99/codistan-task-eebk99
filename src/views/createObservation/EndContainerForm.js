@@ -34,6 +34,74 @@ const EndContainerForm = () => {
           </Form>
         </Col>
       </Row>
+
+      <Row justify="start">
+        <Col xs={16} sm={7} md={9} lg={7} xl={13}>
+          <Form layout="inline">
+            <Form.Item>
+              <Button
+                size="large"
+                style={{
+                  color: "#112565",
+                  borderColor: "#112565",
+                  marginBottom: "0.5rem",
+                  fontSize: "13px",
+                  borderRadius: "5px",
+                }}
+              >
+                Preview
+              </Button>
+            </Form.Item>
+
+            <Col span={8}></Col>
+
+            <Form.Item>
+              <Button
+                size="large"
+                style={{
+                  color: "#112565",
+                  borderColor: "#112565",
+                  marginBottom: "0.5rem",
+                  fontSize: "13px",
+                  borderRadius: "5px",
+                }}
+              >
+                Save as Draft
+              </Button>
+            </Form.Item>
+
+            <Form.Item>
+              <Button
+                size="large"
+                style={{
+                  color: "#4BA735",
+                  borderColor: "#4BA735",
+                  marginBottom: "0.5rem",
+                  fontSize: "13px",
+                  borderRadius: "5px",
+                }}
+              >
+                Submit
+              </Button>
+            </Form.Item>
+
+            <Form.Item>
+              <Button
+                size="large"
+                style={{
+                  color: "white",
+                  background: "#4BA735",
+                  marginBottom: "0.5rem",
+                  fontSize: "13px",
+                  borderRadius: "5px",
+                }}
+              >
+                Mark as Complete
+              </Button>
+            </Form.Item>
+          </Form>
+        </Col>
+      </Row>
     </div>
   );
 };

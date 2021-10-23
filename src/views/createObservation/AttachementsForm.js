@@ -6,11 +6,12 @@ const AttachementsForm = () => {
   return (
     <div>
       <Row justify="start">
-        <Col span={3}>
+        <Col span={4}>
           <Form>
             <Form.Item>
               <Upload>
                 <Button
+                  size="middle"
                   icon={<UploadOutlined />}
                   style={{
                     fontSize: "12px",
