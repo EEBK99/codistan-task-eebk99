@@ -4,6 +4,27 @@ import { Row, Col, Alert } from "antd";
 const ClassifyObsDetForm = () => {
   return (
     <div>
+      <Row>
+        <Col
+          span={11}
+          style={{
+            borderColor: "#4BA735",
+            borderStyle: "solid",
+            borderWidth: "1px",
+            borderRadius: "3px",
+            padding: "3px",
+          }}
+        >
+          <Row>
+            <Col span={24}>on</Col>
+            <Col span={24}>It was observed that</Col>
+            <Col span={24}>at Add Area</Col>
+          </Row>
+        </Col>
+      </Row>
+
+      <br />
+
       <Row justify="start">
         <Col span={10}>
           <Row>

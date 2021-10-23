@@ -12,7 +12,7 @@ const EndContainerForm = () => {
           <Form>
             <Form.Item>
               <Title level={4}>Submit To</Title>
-              <Select placeholder="Select or type name">
+              <Select placeholder="Select or type name" allowClear>
                 <Option value="Person">Person </Option>
                 <Option value="person 2">Person 2</Option>
                 <Option value="Person 3">Person 3</Option>
@@ -25,7 +25,11 @@ const EndContainerForm = () => {
           <Form>
             <Form.Item>
               <Title level={4}>Notify Only</Title>
-              <Select placeholder="Select or type name">
+              <Select
+                placeholder="Select or type name"
+                mode="multiple"
+                allowClear
+              >
                 <Option value="Person">Person </Option>
                 <Option value="person 2">Person 2</Option>
                 <Option value="Person 3">Person 3</Option>

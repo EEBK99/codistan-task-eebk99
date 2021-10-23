@@ -7,6 +7,7 @@ import InvovledPerForm from "./InvolvedPerForm";
 import AttachementsForm from "./AttachementsForm";
 import EndContainerForm from "./EndContainerForm";
 import Mapform from "./MapForm";
+import ActionsRecomForm from "./ActionsRecomForm";
 
 const MainContent = () => {
   const { Title } = Typography;
@@ -66,6 +67,16 @@ const MainContent = () => {
         </Col>
         <Col span={24}>
           <ClassifyObsDetForm />
+        </Col>
+
+        <Divider />
+
+        {/* Actions and Recommendations */}
+        <Col span={24}>
+          <Title level={4}>Actions and Recommendations</Title>
+        </Col>
+        <Col span={24}>
+          <ActionsRecomForm />
         </Col>
 
         <Divider />

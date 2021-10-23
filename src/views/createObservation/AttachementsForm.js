@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Form, Upload, Button } from "antd";
-import { UploadOutlined } from "@ant-design/icons";
+import { UploadOutlined, PlusOutlined } from "@ant-design/icons";
 
 const AttachementsForm = () => {
   return (
@@ -12,9 +12,9 @@ const AttachementsForm = () => {
               <Upload>
                 <Button
                   size="middle"
-                  icon={<UploadOutlined />}
+                  icon={<PlusOutlined />}
                   style={{
-                    fontSize: "12px",
+                    fontSize: "11px",
                     borderColor: "#112565",
                     color: "#112565",
                     fontWeight: "bold",

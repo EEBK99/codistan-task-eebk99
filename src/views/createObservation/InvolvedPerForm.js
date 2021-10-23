@@ -10,7 +10,12 @@ const InvolvedPerForm = () => {
         <Col xs={16} sm={7} md={9} lg={7} xl={5}>
           <Form>
             <Form.Item>
-              <Select placeholder="Select or type name">
+              <Select
+                placeholder="Select or type name"
+                mode="multiple"
+                allowClear
+                size="middle"
+              >
                 <Option value="Person">Person </Option>
                 <Option value="person 2">Person 2</Option>
                 <Option value="Person 3">Person 3</Option>
