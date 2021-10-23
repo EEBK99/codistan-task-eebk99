@@ -1,7 +1,10 @@
 import React from "react";
-import { Row, Col, Alert } from "antd";
+import { Row, Col, Alert, Input, Typography } from "antd";
 
 const ClassifyObsDetForm = () => {
+  const { TextArea } = Input;
+  const { Text } = Typography;
+
   return (
     <div>
       <Row>
@@ -15,10 +18,24 @@ const ClassifyObsDetForm = () => {
             padding: "3px",
           }}
         >
-          <Row>
+          <Row align="middle">
             <Col span={24}>on</Col>
-            <Col span={24}>It was observed that</Col>
-            <Col span={24}>at Add Area</Col>
+            <Col span={24}>
+              <TextArea
+                rows={4}
+                placeholder="It was observed that"
+                allowClear
+                showCount
+                style={{ border: "none" }}
+              />
+            </Col>
+
+            <Col span={1}>at</Col>
+            <Col span={6}>
+              <Input placeholder="Add Area" style={{ border: "none" }} />
+            </Col>
+            <Col span={5}></Col>
+            <Col span={12}>Reporting Time:</Col>
           </Row>
         </Col>
       </Row>
