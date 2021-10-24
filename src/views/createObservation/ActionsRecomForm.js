@@ -1,34 +1,37 @@
 import React from "react";
 import { Row, Col, Table, Tag, Space } from "antd";
-import { Column } from "rc-table";
 
 const ActionsRecomForm = () => {
   const columns = [
     {
-      title: "Name",
-      dataIndex: "name",
-      key: "name",
-      render: (text) => <a>{text}</a>,
+      title: "Actions",
+      dataIndex: "actions",
+      key: "actions",
     },
     {
-      title: "Age",
-      dataIndex: "age",
-      key: "age",
+      title: "Heirarchy",
+      dataIndex: "heirarchy",
+      key: "heirarchy",
     },
     {
-      title: "Address",
-      dataIndex: "address",
-      key: "address",
+      title: "Assign to",
+      dataIndex: "assignto",
+      key: "assignto",
     },
     {
-      title: "Tags",
-      key: "tags",
-      dataIndex: "tags",
+      title: "Target Date",
+      dataIndex: "targetdate",
+      key: "targetdate",
+    },
+    {
+      title: "Status",
+      key: "status",
+      dataIndex: "status",
       render: (tags) => (
         <>
           {tags.map((tag) => {
-            let color = tag.length > 5 ? "geekblue" : "green";
-            if (tag === "loser") {
+            let color = tag == "Completed" ? "green" : "geekblue";
+            if (tag === "Rejected") {
               color = "volcano";
             }
             return (
@@ -41,46 +44,47 @@ const ActionsRecomForm = () => {
       ),
     },
     {
-      title: "Action",
-      key: "action",
-      render: (text, record) => (
-        <Space size="middle">
-          <a>Invite {record.name}</a>
-          <a>Delete</a>
-        </Space>
-      ),
+      title: "Justification",
+      key: "justification",
+      dataIndex: "justification",
+      render: (text) => <a>{text}</a>,
     },
   ];
 
   const data = [
     {
       key: "1",
-      name: "John Brown",
-      age: 32,
-      address: "New York No. 1 Lake Park",
-      tags: ["nice", "developer"],
+      actions: "Remove damage hammer from workshop.",
+      heirarchy: "Elimination",
+      assignto: "Jhon Doe",
+      targetdate: "March 23, 2020",
+      status: ["Completed"],
+      justification: "View Justification",
     },
     {
       key: "2",
-      name: "Jim Green",
-      age: 42,
-      address: "London No. 1 Lake Park",
-      tags: ["loser"],
+      actions: "Remove vehicle from operations.",
+      heirarchy: "Elimination",
+      assignto: "Jessica Doe",
+      targetdate: "March 23, 2020",
+      status: ["Rejected"],
+      justification: "View Justification",
     },
     {
       key: "3",
-      name: "Joe Black",
-      age: 32,
-      address: "Sidney No. 1 Lake Park",
-      tags: ["cool", "teacher"],
+      actions: "Replace deflective lights with new lights.",
+      heirarchy: "Substitution",
+      assignto: "Jhon Roy",
+      targetdate: "March 23, 2020",
+      status: ["In Progress"],
+      justification: "",
     },
   ];
 
   return (
     <div>
       <Row>
-        <Col span={15}>
-          {" "}
+        <Col span={20}>
           <Table columns={columns} dataSource={data}></Table>
         </Col>
       </Row>

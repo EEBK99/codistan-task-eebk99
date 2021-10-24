@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Form, Button, Radio, Typography } from "antd";
+import { Row, Col, Button, Typography } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 
 const PotentialRiskForm = () => {
