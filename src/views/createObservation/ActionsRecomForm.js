@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Table, Tag, Space } from "antd";
+import { Row, Col, Table, Tag } from "antd";
 
 const ActionsRecomForm = () => {
   const columns = [
