@@ -23,8 +23,19 @@ const LayoutStructure = () => {
           <TopHeader />
         </Header>
         <Layout>
-          <Sider breakpoint="lg" collapsedWidth="0" theme="light" width="240">
-            <Menu theme="light" mode="inline" defaultSelectedKeys={["3"]}>
+          <Sider
+            breakpoint="lg"
+            collapsedWidth="0"
+            theme="light"
+            width="240"
+            style={{ padding: "1rem 1rem" }}
+          >
+            <Menu
+              theme="dark"
+              mode="inline"
+              defaultSelectedKeys={["3"]}
+              style={{ borderRadius: "6px" }}
+            >
               <Menu.Item
                 key="1"
                 icon={<img src={LeftNavSiderHomeSvg} alt="" />}
@@ -164,26 +175,14 @@ const LayoutStructure = () => {
                 }}
               >
                 <Menu.Item
-                  key="9"
-                  icon={<img src={LeftNavSiderYourProjSvg} alt="" />}
+                  key="11"
                   style={{
                     fontSize: "13px",
                     fontWeight: "bold",
                     color: "#969696",
                   }}
                 >
-                  Alpha project
-                </Menu.Item>
-                <Menu.Item
-                  key="10"
-                  icon={<img src={LeftNavSiderYourProjSvg} alt="" />}
-                  style={{
-                    fontSize: "13px",
-                    fontWeight: "bold",
-                    color: "#969696",
-                  }}
-                >
-                  Beta project
+                  Members
                 </Menu.Item>
               </SubMenu>
             </Menu>
