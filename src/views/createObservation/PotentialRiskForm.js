@@ -17,6 +17,8 @@ const PotentialRiskForm = () => {
             </Col>
 
             <Col span={1} style={{ background: "orange" }}></Col>
+
+            <Col span={1} style={{ background: "orange" }}></Col>
           </Row>
 
           <br />
