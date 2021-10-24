@@ -64,9 +64,6 @@ const MainContent = () => {
         <Col span={24}></Col>
 
         <Col span={24}>
-          <Title level={5}>Suggestions</Title>
-        </Col>
-        <Col span={24}>
           <ClassifyObsDetForm />
         </Col>
 

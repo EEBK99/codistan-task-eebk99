@@ -4,7 +4,7 @@ import { CalendarOutlined } from "@ant-design/icons";
 
 const ClassifyObsDetForm = () => {
   const { TextArea } = Input;
-  const { Text } = Typography;
+  const { Text, Title } = Typography;
 
   const currentDateTime = Date();
 
@@ -54,6 +54,9 @@ const ClassifyObsDetForm = () => {
       <br />
 
       <Row justify="start">
+        <Col span={24}>
+          <Title level={5}>Suggestions</Title>
+        </Col>
         <Col span={10}>
           <Row>
             <Col span={11}>

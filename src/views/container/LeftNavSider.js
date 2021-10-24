@@ -27,7 +27,12 @@ const LeftNavSider = () => {
       >
         <Row>
           <Col span={7} style={{ padding: "1rem" }}>
-            <Avatar shape="square" size={50} icon={<UserOutlined />} />
+            <Avatar
+              shape="square"
+              size={50}
+              icon={<UserOutlined />}
+              style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.5)" }}
+            />
           </Col>
           <Col span={12} style={{ padding: "1rem" }}>
             <span style={{ color: "#112565" }}>Welcome!</span>{" "}
