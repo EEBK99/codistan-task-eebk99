@@ -14,6 +14,8 @@ import LeftNavSiderPerAnaSvg from "../../assets/svg/LeftNavSiderPerAna.svg";
 import LeftNavSiderYourProjSvg from "../../assets/svg/LeftNavSiderYourProj.svg";
 
 const LayoutStructure = () => {
+  const { SubMenu } = Menu;
+
   return (
     <div>
       <Layout>
@@ -34,6 +36,7 @@ const LayoutStructure = () => {
               >
                 Home
               </Menu.Item>
+
               <Menu.Item
                 key="2"
                 icon={<img src={LeftNavSiderMyResSvg} alt="" />}
@@ -45,6 +48,7 @@ const LayoutStructure = () => {
               >
                 My Responsibilities
               </Menu.Item>
+
               <Menu.Item
                 key="3"
                 icon={<img src={LeftNavSiderObsFedSvg} alt="" />}
@@ -56,6 +60,7 @@ const LayoutStructure = () => {
               >
                 Observation & Feedback
               </Menu.Item>
+
               <Menu.Item
                 key="4"
                 icon={<img src={LeftNavSiderIncManSvg} alt="" />}
@@ -67,6 +72,7 @@ const LayoutStructure = () => {
               >
                 Incident Management
               </Menu.Item>
+
               <Menu.Item
                 key="5"
                 icon={<img src={LeftNavSiderAudInsSvg} alt="" />}
@@ -78,6 +84,7 @@ const LayoutStructure = () => {
               >
                 Audit and Inspection
               </Menu.Item>
+
               <Menu.Item
                 key="6"
                 icon={<img src={LeftNavSiderRiskMangSvg} alt="" />}
@@ -89,6 +96,7 @@ const LayoutStructure = () => {
               >
                 Risk Management
               </Menu.Item>
+
               <Menu.Item
                 key="7"
                 icon={<img src={LeftNavSiderLearMangSvg} alt="" />}
@@ -100,6 +108,7 @@ const LayoutStructure = () => {
               >
                 Learning Management
               </Menu.Item>
+
               <Menu.Item
                 key="8"
                 icon={<img src={LeftNavSiderPerAnaSvg} alt="" />}
@@ -111,6 +120,72 @@ const LayoutStructure = () => {
               >
                 Performance Analytics
               </Menu.Item>
+
+              <SubMenu
+                key="sub1"
+                title="Your Projects"
+                style={{
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                  color: "#112565",
+                }}
+              >
+                <Menu.Item
+                  key="9"
+                  icon={<img src={LeftNavSiderYourProjSvg} alt="" />}
+                  style={{
+                    fontSize: "13px",
+                    fontWeight: "bold",
+                    color: "#969696",
+                  }}
+                >
+                  Alpha project
+                </Menu.Item>
+                <Menu.Item
+                  key="10"
+                  icon={<img src={LeftNavSiderYourProjSvg} alt="" />}
+                  style={{
+                    fontSize: "13px",
+                    fontWeight: "bold",
+                    color: "#969696",
+                  }}
+                >
+                  Beta project
+                </Menu.Item>
+              </SubMenu>
+
+              <SubMenu
+                key="sub2"
+                title="Team Members"
+                style={{
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                  color: "#112565",
+                }}
+              >
+                <Menu.Item
+                  key="9"
+                  icon={<img src={LeftNavSiderYourProjSvg} alt="" />}
+                  style={{
+                    fontSize: "13px",
+                    fontWeight: "bold",
+                    color: "#969696",
+                  }}
+                >
+                  Alpha project
+                </Menu.Item>
+                <Menu.Item
+                  key="10"
+                  icon={<img src={LeftNavSiderYourProjSvg} alt="" />}
+                  style={{
+                    fontSize: "13px",
+                    fontWeight: "bold",
+                    color: "#969696",
+                  }}
+                >
+                  Beta project
+                </Menu.Item>
+              </SubMenu>
             </Menu>
           </Sider>
 

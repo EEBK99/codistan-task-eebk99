@@ -40,7 +40,7 @@ const EndContainerForm = () => {
       </Row>
 
       <Row justify="start">
-        <Col xs={16} sm={7} md={9} lg={7} xl={13}>
+        <Col xs={16} sm={7} md={9} lg={7} xl={14}>
           <Form layout="inline">
             <Form.Item>
               <Button
