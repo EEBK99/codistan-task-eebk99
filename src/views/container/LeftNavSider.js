@@ -1,5 +1,7 @@
 import React from "react";
-import { Menu, Row, Col, Divider } from "antd";
+import { Menu, Row, Col, Divider, Avatar } from "antd";
+import { UserOutlined } from "@ant-design/icons";
+
 import LeftNavSiderHomeSvg from "../../assets/svg/LeftNavSiderHome.svg";
 import LeftNavSiderMyResSvg from "../../assets/svg/LeftNavSiderMyRes.svg";
 import LeftNavSiderObsFedSvg from "../../assets/svg/LeftNavSiderObsFed.svg";
@@ -24,7 +26,17 @@ const LeftNavSider = () => {
         }}
       >
         <Row>
-          <Col span={24}>sadsaddas</Col>
+          <Col span={7} style={{ padding: "1rem" }}>
+            <Avatar shape="square" size={50} icon={<UserOutlined />} />
+          </Col>
+          <Col span={12} style={{ padding: "1rem" }}>
+            <span style={{ color: "#112565" }}>Welcome!</span>{" "}
+            <span
+              style={{ color: "#112565", fontWeight: "bold", fontSize: "20px" }}
+            >
+              EEBK99
+            </span>
+          </Col>
 
           <Col span={24}>
             <Menu theme="light" mode="inline" defaultSelectedKeys={["3"]}>
