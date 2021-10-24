@@ -4,7 +4,7 @@ import { CalendarOutlined } from "@ant-design/icons";
 
 const ClassifyObsDetForm = () => {
   const { TextArea } = Input;
-  const { Text, Title } = Typography;
+  const { Title } = Typography;
 
   const currentDateTime = Date();
 
