@@ -1,8 +1,9 @@
 import React from "react";
-import { Layout } from "antd";
+import { Layout, Menu } from "antd";
 import styled from "styled-components";
 import TopHeader from "../container/TopHeader";
 import MainContent from "../createObservation/MainContent";
+import LeftNavSiderHomeSvg from "../../assets/svg/LeftNavSiderHome.svg";
 
 const LayoutStructure = () => {
   return (
@@ -12,7 +13,24 @@ const LayoutStructure = () => {
           <TopHeader />
         </Header>
         <Layout>
-          <Sider>Sider</Sider>
+          <Sider breakpoint="lg" collapsedWidth="0" theme="light">
+            <Menu theme="light" mode="inline" defaultSelectedKeys={["1"]}>
+              <Menu.Item
+                key="1"
+                icon={<img src={LeftNavSiderHomeSvg} alt="" />}
+              >
+                Home
+              </Menu.Item>
+              <Menu.Item key="2"> My Responsibilities </Menu.Item>
+              <Menu.Item key="3"> Observation & Feedback </Menu.Item>
+              <Menu.Item key="4"> Incident Management </Menu.Item>
+              <Menu.Item key="5"> Audit and Inspection </Menu.Item>
+              <Menu.Item key="6"> Risk Management </Menu.Item>
+              <Menu.Item key="7"> Learning Management </Menu.Item>
+              <Menu.Item key="8"> Performance Analytics </Menu.Item>
+            </Menu>
+          </Sider>
+
           <Content>
             <MainContent />
           </Content>
