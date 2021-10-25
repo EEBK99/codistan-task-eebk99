@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Form, Upload, Button } from "antd";
-import { UploadOutlined, PlusOutlined } from "@ant-design/icons";
+import { PlusOutlined } from "@ant-design/icons";
 
 const AttachementsForm = () => {
   return (
