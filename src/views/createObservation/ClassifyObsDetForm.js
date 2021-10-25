@@ -14,21 +14,22 @@ const ClassifyObsDetForm = () => {
         <Col
           xs={24}
           sm={24}
-          md={22}
-          lg={20}
-          xl={12}
+          md={24}
+          lg={24}
+          xl={15}
           style={{
             borderColor: "#4BA735",
             borderStyle: "solid",
             borderWidth: "1px",
-            borderRadius: "3px",
+            borderRadius: "5px",
             padding: "8px",
           }}
         >
           <Row align="middle">
             <Col span={24}>
-              <span style={{ fontWeight: "1" }}>on</span> <CalendarOutlined />{" "}
-              {currentDateTime}
+              <span style={{ fontWeight: "1", fontSize: "14px" }}>on</span>{" "}
+              <CalendarOutlined />
+              <span style={{ fontSize: "11px" }}> {currentDateTime}</span>
             </Col>
             <br />
             <br />
@@ -38,18 +39,21 @@ const ClassifyObsDetForm = () => {
                 placeholder="Enter your observation here"
                 allowClear
                 showCount
-                style={{ border: "none" }}
               />
             </Col>
 
-            <Col span={1}>at</Col>
+            <Col span={1}>
+              <span style={{ fontWeight: "1", fontSize: "14px" }}>at</span>
+            </Col>
             <Col span={7}>
               <Input placeholder="Add Area" style={{ border: "none" }} />
             </Col>
-            <Col span={4}></Col>
-            <Col span={12}>
-              <span style={{ fontWeight: "1" }}>Reporting Time:</span>{" "}
-              {currentDateTime}
+            <Col span={1}></Col>
+            <Col span={15}>
+              <span style={{ fontWeight: "1", fontSize: "14px" }}>
+                Reporting Time:
+              </span>{" "}
+              <span style={{ fontSize: "11px" }}> {currentDateTime}</span>
             </Col>
           </Row>
         </Col>
