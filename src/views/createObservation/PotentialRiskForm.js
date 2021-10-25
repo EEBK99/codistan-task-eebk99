@@ -10,7 +10,7 @@ const PotentialRiskForm = () => {
       <Row justify="start" align="middle" wrap="true">
         <Col xs={24} sm={24} md={24} lg={24} xl={24}>
           <Row justify="start">
-            <Col span={3} style={{ background: "orange" }}>
+            <Col xs={6} sm={6} md={4} lg={4} xl={2}>
               LIKELIHOOD
               <br />
               <span style={{ fontSize: "11px", color: "#969696" }}>
@@ -18,8 +18,8 @@ const PotentialRiskForm = () => {
               </span>
             </Col>
 
-            {/* <Col span={1} style={{ background: "green" }}></Col> */}
-            <Col span={1} align="center" style={{ background: "blue" }}>
+            <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
+            <Col xs={3} sm={3} md={2} lg={2} xl={1} align="center">
               <Button
                 style={{
                   borderColor: "#27AE60",
@@ -33,8 +33,8 @@ const PotentialRiskForm = () => {
               <Text style={{ color: "#707070", fontSize: "11px" }}>Rare</Text>
             </Col>
 
-            <Col span={1}></Col>
-            <Col span={1} align="center">
+            <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
+            <Col xs={3} sm={3} md={2} lg={2} xl={1} align="center">
               <Button
                 style={{
                   borderColor: "#FFDD59",
@@ -48,8 +48,8 @@ const PotentialRiskForm = () => {
               <Text style={{ color: "#707070", fontSize: "11px" }}>Likely</Text>
             </Col>
 
-            <Col span={1}></Col>
-            <Col span={1} align="center">
+            <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
+            <Col xs={3} sm={3} md={2} lg={2} xl={1} align="center">
               <Button
                 style={{
                   borderColor: "#3498DB",
@@ -65,8 +65,8 @@ const PotentialRiskForm = () => {
               </Text>
             </Col>
 
-            <Col span={1}></Col>
-            <Col span={1} align="center">
+            <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
+            <Col xs={3} sm={3} md={2} lg={2} xl={1} align="center">
               <Button
                 style={{
                   borderColor: "#FC9121",
@@ -82,8 +82,8 @@ const PotentialRiskForm = () => {
               </Text>
             </Col>
 
-            <Col span={1}></Col>
-            <Col span={1} align="center">
+            <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
+            <Col xs={3} sm={3} md={2} lg={2} xl={1} align="center">
               <Button
                 style={{
                   borderColor: "#F14031",
@@ -101,7 +101,7 @@ const PotentialRiskForm = () => {
           <br />
 
           <Row justify="start" align="middle">
-            <Col span={2}>
+            <Col xs={6} sm={6} md={4} lg={4} xl={2}>
               SEVERITY
               <br />
               <span style={{ fontSize: "11px", color: "#969696" }}>
@@ -109,8 +109,8 @@ const PotentialRiskForm = () => {
               </span>
             </Col>
 
-            <Col span={1}></Col>
-            <Col span={1} align="center">
+            <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
+            <Col xs={3} sm={3} md={2} lg={2} xl={1} align="center">
               <Button
                 style={{
                   borderColor: "#27AE60",
@@ -124,8 +124,8 @@ const PotentialRiskForm = () => {
               <Text style={{ color: "#707070", fontSize: "11px" }}>Low</Text>
             </Col>
 
-            <Col span={1}></Col>
-            <Col span={1} align="center">
+            <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
+            <Col xs={3} sm={3} md={2} lg={2} xl={1} align="center">
               <Button
                 style={{
                   borderColor: "#FFDD59",
@@ -139,8 +139,8 @@ const PotentialRiskForm = () => {
               <Text style={{ color: "#707070", fontSize: "11px" }}>Minor</Text>
             </Col>
 
-            <Col span={1}></Col>
-            <Col span={1} align="center">
+            <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
+            <Col xs={3} sm={3} md={2} lg={2} xl={1} align="center">
               <Button
                 style={{
                   borderColor: "#3498DB",
@@ -156,8 +156,8 @@ const PotentialRiskForm = () => {
               </Text>
             </Col>
 
-            <Col span={1}></Col>
-            <Col span={1} align="center">
+            <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
+            <Col xs={3} sm={3} md={2} lg={2} xl={1} align="center">
               <Button
                 style={{
                   borderColor: "#FC9121",
@@ -171,8 +171,8 @@ const PotentialRiskForm = () => {
               <Text style={{ color: "#707070", fontSize: "11px" }}>Major</Text>
             </Col>
 
-            <Col span={1}></Col>
-            <Col span={1} align="center">
+            <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
+            <Col xs={3} sm={3} md={2} lg={2} xl={1} align="center">
               <Button
                 style={{
                   borderColor: "#F14031",
