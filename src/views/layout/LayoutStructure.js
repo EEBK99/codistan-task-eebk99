@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu, Row, Col } from "antd";
+import { Layout } from "antd";
 import styled from "styled-components";
 import TopHeader from "../container/TopHeader";
 import MainContent from "../createObservation/MainContent";
@@ -27,13 +27,12 @@ const LayoutStructure = () => {
             <MainContent />
           </Content>
         </Layout>
-        {/* <Footer>Footer</Footer> */}
       </Layout>
     </div>
   );
 };
 
-var { Header, Footer, Sider, Content } = Layout;
+var { Header, Sider, Content } = Layout;
 
 Header = styled(Header)`
   background-color: #112565;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button, Radio } from "antd";
+import { Form, Button } from "antd";
 import ClassifySorConcernSvg from "../../assets/svg/ClassifySorConcern.svg";
 import ClassifySorPositiveSvg from "../../assets/svg/ClassifySorPositive.svg";
 import ClassifySorLSRSvg from "../../assets/svg/ClassifySorLSR.svg";

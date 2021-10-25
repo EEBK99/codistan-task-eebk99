@@ -32,7 +32,7 @@ const ActionsRecomForm = () => {
       render: (tags) => (
         <>
           {tags.map((tag) => {
-            let color = tag == "Completed" ? "green" : "geekblue";
+            let color = tag === "Completed" ? "green" : "geekblue";
             if (tag === "Rejected") {
               color = "volcano";
             }
@@ -49,7 +49,7 @@ const ActionsRecomForm = () => {
       title: "Justification",
       key: "justification",
       dataIndex: "justification",
-      render: (text) => <a>{text}</a>,
+      render: (text) => <a href>{text}</a>,
     },
   ];
 
