@@ -1,7 +1,9 @@
 import React from "react";
-import { Row, Col, Table, Tag } from "antd";
+import { Row, Col, Table, Tag, Select, Button, Input } from "antd";
 
 const ActionsRecomForm = () => {
+  const { Option } = Select;
+
   const columns = [
     {
       title: "Actions",
@@ -85,7 +87,55 @@ const ActionsRecomForm = () => {
     <div>
       <Row>
         <Col xs={24} sm={24} md={24} lg={24} xl={20}>
-          <Table columns={columns} dataSource={data}></Table>
+          <Table
+            size="small"
+            columns={columns}
+            dataSource={data}
+            pagination={false}
+            bordered
+            tableLayout="auto"
+          ></Table>
+
+          <Row style={{ background: "#F8FAFF" }}>
+            <Col span={24}>
+              <Row>
+                <Col span={4}>
+                  <Select
+                    size="large"
+                    placeholder="Heirarchy"
+                    style={{ background: "#F8FAFF", width: "100%" }}
+                  >
+                    <Option value="Heirarchy">Heirarchy</Option>
+                    <Option value="Heirarchy 2">Heirarchy 2</Option>
+                    <Option value="Heirarchy 3">Heirarchy 3</Option>
+                  </Select>
+                </Col>
+                <Col span={16}>
+                  <Input
+                    size="large"
+                    placeholder="Add custom action/recommendations here"
+                    style={{ background: "#F8FAFF" }}
+                  />
+                </Col>
+                {/* <Col span={1}></Col> */}
+                <Col span={4}>
+                  <Button
+                    size="large"
+                    type="primary"
+                    style={{
+                      color: "white",
+                      background: "#112565",
+                      borderColor: "white",
+                      borderRadius: "3px",
+                      width: "100%",
+                    }}
+                  >
+                    Add Action
+                  </Button>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </div>
