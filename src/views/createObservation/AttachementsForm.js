@@ -6,7 +6,7 @@ const AttachementsForm = () => {
   return (
     <div>
       <Row justify="start">
-        <Col span={4}>
+        <Col xs={12} sm={6} md={6} lg={6} xl={4}>
           <Form>
             <Form.Item>
               <Upload>
@@ -27,7 +27,7 @@ const AttachementsForm = () => {
             </Form.Item>
           </Form>
         </Col>
-        <Col span={12}>
+        <Col xs={18} sm={18} md={9} lg={9} xl={6}>
           <Row justify="start">
             <Col span={24} style={{ fontSize: "11px" }}>
               Supported file format:
