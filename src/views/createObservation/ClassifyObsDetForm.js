@@ -12,7 +12,11 @@ const ClassifyObsDetForm = () => {
     <div>
       <Row>
         <Col
-          span={12}
+          xs={24}
+          sm={24}
+          md={22}
+          lg={20}
+          xl={12}
           style={{
             borderColor: "#4BA735",
             borderStyle: "solid",
@@ -57,7 +61,7 @@ const ClassifyObsDetForm = () => {
         <Col span={24}>
           <Title level={5}>Suggestions</Title>
         </Col>
-        <Col span={10}>
+        <Col xs={24} sm={22} md={22} lg={20} xl={12}>
           <Row>
             <Col span={11}>
               <Alert

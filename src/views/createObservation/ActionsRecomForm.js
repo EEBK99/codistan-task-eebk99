@@ -84,7 +84,7 @@ const ActionsRecomForm = () => {
   return (
     <div>
       <Row>
-        <Col span={20}>
+        <Col xs={24} sm={24} md={24} lg={24} xl={20}>
           <Table columns={columns} dataSource={data}></Table>
         </Col>
       </Row>

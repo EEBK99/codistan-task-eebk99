@@ -7,10 +7,10 @@ const PotentialRiskForm = () => {
 
   return (
     <div>
-      <Row justify="start" align="middle">
-        <Col span={24}>
-          <Row justify="start" align="middle">
-            <Col span={2}>
+      <Row justify="start" align="middle" wrap="true">
+        <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+          <Row justify="start">
+            <Col span={3} style={{ background: "orange" }}>
               LIKELIHOOD
               <br />
               <span style={{ fontSize: "11px", color: "#969696" }}>
@@ -18,8 +18,8 @@ const PotentialRiskForm = () => {
               </span>
             </Col>
 
-            <Col span={1}></Col>
-            <Col span={1} align="center">
+            {/* <Col span={1} style={{ background: "green" }}></Col> */}
+            <Col span={1} align="center" style={{ background: "blue" }}>
               <Button
                 style={{
                   borderColor: "#27AE60",

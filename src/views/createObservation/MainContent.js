@@ -93,9 +93,7 @@ const MainContent = () => {
         <Col span={24}>
           <Title level={4}>Actions and Recommendations</Title>
         </Col>
-        <Col span={24}>
-          <ActionsRecomForm />
-        </Col>
+        <Col span={24}>{/* <ActionsRecomForm /> */}</Col>
 
         <Divider />
 
